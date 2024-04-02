@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.main {
+  background: url("./bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.today-section {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.today {
+  color: #f4ca82;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.date {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 46rem;
+}
+
+.todo-section {
+  margin: 3.44rem 0 4.75rem 0;
+  padding-right: 0.6rem;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.todo-section::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+.todo-section::-webkit-scrollbar-thumb {
+  background: rgba(178, 243, 223, 0.7);
+  border-radius: 5px;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b2f3df;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.priority {
+  background: #efc5af;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.content {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 80%;
+  text-transform: capitalize;
+}
+
+.option {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.delete {
+  color: #df5757;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.time {
+  margin-top: 0.6rem;
+  font-size: 0.75rem;
+}
+
+.input-section {
+  width: 100%;
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(178, 243, 223, 0.8);
+  border-radius: 1.125rem;
+}
+
+.text {
+  width: 100%;
+  outline: none;
+  font-size: 1.3rem;
+  font-weight: 400;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+
+.text::placeholder {
+  color: #B2F3DF;
+}
+
+.submit {
+  font-size: 1.5rem;
+  padding: 0.5rem 0.8rem;
+  background: rgba(178, 243, 223, 0.7);
+  border-radius: 0.75rem;
+  color: #278e8d;
+  cursor: pointer;
+}
