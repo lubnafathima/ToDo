@@ -179,6 +179,8 @@ function addItemToUI(todoItem, key) {
     item.remove();
     localStorage.removeItem(key);
   });
+
+  // EDITING DATA
 }
 
 // DISPLAYING DATA
